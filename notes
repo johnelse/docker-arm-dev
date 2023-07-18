@@ -1,0 +1,8 @@
+https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/
+https://github.com/multiarch/qemu-user-static
+
+sudo apt-get install qemu binfmt-support qemu-user-static
+docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+
+docker run --rm -t arm32v7/ubuntu uname -m
+docker run --rm -t arm64v8/ubuntu uname -m
