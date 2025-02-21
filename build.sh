@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t ${USER}/arm-dev .
+docker build --platform linux/arm32/v7 -t ${USER}/arm-dev .

@@ -1,5 +1,5 @@
-FROM       arm32v7/ubuntu
-MAINTAINER John Else <john.else@gmail.com>
+FROM    ubuntu:24.04
+LABEL   org.opencontainers.image.authors="john.else@gmail.com"
 
 RUN     apt-get update
 # Languages
