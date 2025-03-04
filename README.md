@@ -20,6 +20,8 @@ You can now run multi-platform docker images with a platform other than your
 current native architecture! e.g.
 
 ```
+$ docker run -it --rm --platform linux/arm/v7 ubuntu uname -m
+armv7l
 $ docker run -it --rm --platform linux/arm64/v8 ubuntu uname -m
 aarch64
 ```
