@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PLATFORM=linux/arm/v8
+PLATFORM=linux/arm64/v8
 
 docker build --platform $PLATFORM -t ${USER}/arm-dev .
 
