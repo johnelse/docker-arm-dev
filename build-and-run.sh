@@ -1,7 +1,11 @@
 #!/bin/bash
 
+PLATFORM=linux/arm/v8
+
+docker build --platform $PLATFORM -t ${USER}/arm-dev .
+
 docker run -it --rm \
-    --platform linux/arm64/v8 \
+    --platform $PLATFORM \
     -v ~/.ssh:/home/dev/.ssh \
     -v "${PWD}":/external:ro \
     ${USER}/arm-dev \

@@ -24,9 +24,9 @@ $ docker run -it --rm --platform linux/arm64/v8 ubuntu uname -m
 aarch64
 ```
 
-Use `build.sh` to build the develepment environment container, and `run.sh` to
-launch it interactively. You may want to edit the platform requested in both
-these scripts, and/or the set of packages specified in the `Dockerfile`.
+Use `build-and-run.sh` to build the development environment and launch it
+interactively. You may want to edit the platform requested in this script,
+and/or the set of packages specified in the `Dockerfile`.
 
 Some useful links:
 
