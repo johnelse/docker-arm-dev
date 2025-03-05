@@ -24,7 +24,7 @@ RUN     apt-get install -y \
             libxkbcommon-x11-dev
 
 # Other utilities
-RUN     apt-get install -y gdb git tmux vim
+RUN     apt-get install -y gdb git tmux vim wget
 
 RUN     useradd dev
 RUN     mkdir -p /home/dev
